@@ -61,7 +61,7 @@ export default function ListContact() {
     {
       title: "Действия",
       key: "actions",
-      render: (text: string, record: Contact) => (
+      render: (_: string, record: Contact) => (
         <Button danger onClick={() => handleDelete(record.email)}>
           Удалить
         </Button>
